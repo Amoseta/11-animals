@@ -1,17 +1,20 @@
-class Bird {
-    constructor(name, color) {
-        this.breed = 'Unknown animal';
-        this.environment = 'water';
-        this.name = name;
-        this.color = color;
-        this.sound = 'Bul bul 🐟🐠';
+import { Bird } from './Animal.js';
 
+class Bird extends Animal {
+    constructor(name, color, skin) {
+        super(name, color, skin);
+        this.breed = 'Unknown animal';
+        this.environment = 'air';
+        this.skin = 'feathers';
+        this.sound = 'Hello kud ea bz 🦜🐔🦅💸';
+        this.wingsCount = 2;
     }
-    voice(){
-        console.log(`${this.breed} ${this.name} says: ${this.sound}`);
-    }
-    introduce() {
-        console.log(`Hi, I am ${this.name}, my scales are ${this.color} and I say ${this.sound}`);
+    canFly(wings) {
+        if (!this.wingsCount) {
+            console.log(`${this.breed} ${this.name} is not a bird, but have ${wings}!`);
+            return false;
+        }
+        console.log(`${this.breed} ${this.name} is really a bird!`);
     }
 }
 export { Bird }
