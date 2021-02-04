@@ -1,4 +1,4 @@
-import { DragonFly } from './Bird.js';
+import { Bird } from './Bird.js';
 
 class DragonFly extends Bird {
     constructor(name, color, imposter) {
