@@ -54,5 +54,12 @@ roma.introduce();
 grude.introduce();
 jack.introduce();
 humor.introduce();
-humor.notBird('tai ne paukstis');
+
+
+roma.canFly();
+grude.canFly();
+jack.canFly();
+humor.canFly(4);
+humor.numberWings(3);
+
 
