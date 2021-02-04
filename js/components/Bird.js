@@ -1,4 +1,4 @@
-import { Bird } from './Animal.js';
+import { Animal } from './Animal.js';
 
 class Bird extends Animal {
     constructor(name, color, skin) {
